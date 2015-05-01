@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KR_DModelStoreContainer" CdmEntityContainer="KR_DEntities">
+    <EntitySetMapping Name="adresies">
+      <EntityTypeMapping TypeName="KR_DModel.adresy">
+        <MappingFragment StoreEntitySet="adresy">
+          <ScalarProperty Name="a_id" ColumnName="a_id" />
+          <ScalarProperty Name="k_id" ColumnName="k_id" />
+          <ScalarProperty Name="ulica" ColumnName="ulica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kliencis">
+      <EntityTypeMapping TypeName="KR_DModel.klienci">
+        <MappingFragment StoreEntitySet="klienci">
+          <ScalarProperty Name="k_id" ColumnName="k_id" />
+          <ScalarProperty Name="nazwa" ColumnName="nazwa" />
+          <ScalarProperty Name="nip" ColumnName="nip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="telefonies">
+      <EntityTypeMapping TypeName="KR_DModel.telefony">
+        <MappingFragment StoreEntitySet="telefony">
+          <ScalarProperty Name="t_id" ColumnName="t_id" />
+          <ScalarProperty Name="k_id" ColumnName="k_id" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
